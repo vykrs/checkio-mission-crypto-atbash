@@ -28,16 +28,22 @@ TESTS = {
 
 
     ],
-#    "Extra": [
-#        {
-#            "input": [6, 3],
-#            "answer": 9,
-#            "explanation": "6+3=?"
-#        },
-#        {
-#            "input": [6, 7],
-#            "answer": 13,
-#            "explanation": "6+7=?"
-#        }
-#    ]
+    "Extra": [
+        {
+            "input": '',
+            "answer": '',
+        },
+        {
+            "input": '''The Atbash cipher is a particular type of monoalphabetic cipher formed by taking the alphabet 
+(or abjad, syllabary, etc.) and mapping it to its reverse, so that the first letter becomes the last letter, 
+the second letter becomes the second to last letter, and so on.''',
+            "answer": '''Gsv Zgyzhs xrksvi rh z kzigrxfozi gbkv lu nlmlzokszyvgrx xrksvi ulinvw yb gzprmt gsv zokszyvg 
+(li zyqzw, hboozyzib, vgx.) zmw nzkkrmt rg gl rgh ivevihv, hl gszg gsv urihg ovggvi yvxlnvh gsv ozhg ovggvi, 
+gsv hvxlmw ovggvi yvxlnvh gsv hvxlmw gl ozhg ovggvi, zmw hl lm.''',
+        },
+        {
+            "input": 'ATTACK AT DAWN',
+            "answer": 'ZGGZXP ZG WZDM',
+        }
+    ]
 }
