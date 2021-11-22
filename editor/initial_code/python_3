@@ -1,13 +1,15 @@
-def sum_two(a: int, b: int) -> int:
+def atbash(plaintext: str) -> str:
     # your code here
-    return 0
+    return ''
 
 
 if __name__ == '__main__':
-    print("Example:")
-    print(sum_two(3, 2))
+    print("Example:\nplaintext: testing")
+    print(atbash('testing'))
 
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_two(3, 2) == 5
-    assert sum_two(5, 7) == 12
+    assert atbash('testing') == 'gvhgrmt'
+    assert atbash('attack at dawn') == 'zggzxp zg wzdm'
+    assert atbash('Hello, world!') == 'Svool, dliow!'
+        
     print("Coding complete? Click 'Check' to earn cool rewards!")

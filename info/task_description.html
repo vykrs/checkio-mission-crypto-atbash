@@ -1,20 +1,37 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
+<i>
+This is the first in a series of missions dedicated to cryptography. In this mission we will take a look at the Atbash cipher.
+</i>  
 </p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+<p>
+Atbash is one of the oldest known ciphers, created in Middle East around 600 B.C; the first known examples of it can be found in Tanakh (the Old Testament), where it was used to encrypt certain names and words.</p>
+<p>    
+Atbash is very simple substitution cipher where the key is formed by mapping the plaintext alphabet to it's reverse, so that the first letter is replaced with the last, the second letter - with the second to last and so on. For the Latin alphabet the substitution table looks like this:</p>
+
+<pre>
+Plaintext:  abcdefghijklmnopqrstuvwxyz
+Ciphertext: ZYXWVUTSRQPONMLKJIHGFEDCBA
+</pre>
+
+<p>Of course, since the encryption algorithm doesn't use any type of secret key, Atbash provides virtually no information security. Anyone who intercepts the message encrypted with the Atbash cipher can easily decipher it by using the same substitution table.</p>
+
+<p>The word "Atbash" is composed of hebrew letters Aleph, Tae, Bet and Shin and actually describes the substitution principle: Aleph (first letter of hebrew alphabet) to Tae (last one), Bet (second) to Shin (second to last), etc.</p>
+
+<p></p>
+
+<p>For this mission you need to write a function that encrypts given text with Atbash. Punctuation, whitespaces and other characters should remain unchanged.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> Plaintext: str
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Ciphertext: str 
 </p>
 
 
@@ -25,28 +42,13 @@
     </p>
 
 {% if is_js %}
-<pre class="brush: javascript">sumTwo(3, 2) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">atbash('testing') == 'gvhgrmt'
+assert atbash('Hello, world!') == 'Svool, dliow!'
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(3, 2) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">atbash('testing') == 'gvhgrmt'
+assert atbash('Hello, world!') == 'Svool, dliow!'
 </pre>
 {% endif %}
 </div>
 
-
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
-</p>
