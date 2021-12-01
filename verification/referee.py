@@ -38,11 +38,9 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "atbash",
-            "js": "atbash"
+            "python": "atbash"
         },
         cover_code={
-            'python-3': cover_codes.unwrap_args,
-            'js-node': cover_codes.js_unwrap_args
+            'python-3': cover_codes.unwrap_args
         }
     ).on_ready)

@@ -44,6 +44,10 @@ gsv hvxlmw ovggvi yvxlnvh gsv hvxlmw gl ozhg ovggvi, zmw hl lm.''',
         {
             "input": 'ATTACK AT DAWN',
             "answer": 'ZGGZXP ZG WZDM',
-        }
+        },
+        {
+            "input": '$1000000',
+            "answer": '$1000000',
+        },
     ]
 }
