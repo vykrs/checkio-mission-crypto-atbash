@@ -11,17 +11,17 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": 'testing',
+            "input": ['testing'],
             "answer": 'gvhgrmt',
             "explanation": 'Basic'
         },
         {
-            "input": 'attack at dawn',
+            "input": ['attack at dawn'],
             "answer": 'zggzxp zg wzdm',
             "explanation": 'Keep the whitespaces'
         },
         {
-            "input": 'Hello, world!',
+            "input": ['Hello, world!'],
             "answer": 'Svool, dliow!',
             "explanation": 'Keep caps and punctuation'
         }
@@ -30,23 +30,23 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": '',
+            "input": [''],
             "answer": '',
         },
         {
-            "input": '''The Atbash cipher is a particular type of monoalphabetic cipher formed by taking the alphabet 
+            "input": ['''The Atbash cipher is a particular type of monoalphabetic cipher formed by taking the alphabet 
 (or abjad, syllabary, etc.) and mapping it to its reverse, so that the first letter becomes the last letter, 
-the second letter becomes the second to last letter, and so on.''',
+the second letter becomes the second to last letter, and so on.'''],
             "answer": '''Gsv Zgyzhs xrksvi rh z kzigrxfozi gbkv lu nlmlzokszyvgrx xrksvi ulinvw yb gzprmt gsv zokszyvg 
 (li zyqzw, hboozyzib, vgx.) zmw nzkkrmt rg gl rgh ivevihv, hl gszg gsv urihg ovggvi yvxlnvh gsv ozhg ovggvi, 
 gsv hvxlmw ovggvi yvxlnvh gsv hvxlmw gl ozhg ovggvi, zmw hl lm.''',
         },
         {
-            "input": 'ATTACK AT DAWN',
+            "input": ['ATTACK AT DAWN'],
             "answer": 'ZGGZXP ZG WZDM',
         },
         {
-            "input": '$1000000',
+            "input": ['$1000000'],
             "answer": '$1000000',
         },
     ]
